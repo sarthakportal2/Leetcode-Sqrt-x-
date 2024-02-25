@@ -4,7 +4,7 @@ class Solution {
         if(x==0 || x==1)return x;//initializing x val to either 0 or 1 and printing it
         int start=1;int mid=-1;int end=x;//start ,mid,end val declare
         while(start<=end){//iterating start to end val 
-            mid=start+(end-start)/2;//calculatings qare root val
+            mid=start+(end-start)/2;//calculating square root val
             if(mid*(long)mid> (long)x)end=mid-1;//checking mid >x and declaring end val to mid's less val
             else if (mid*mid==x)return mid;//x to mid's square assigiment and priniting it 
             else start=mid+1;//incrementing start to mid 
